@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@ section {
 }
 
 #info {
-    background-color: #c0c0e2;
+    background-color: #684d91;
 }
 
 #crono {
@@ -184,6 +185,88 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     font-style: normal;
     font-size: 140px;
 }
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.info-container div{
+    max-width: 80%;
+}
+
+.vineta-sup, .vineta-inf, .vineta-div{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vineta-sup img, .vineta-inf img{
+    width: 600px;
+    height: 100px;
+}
+
+.vineta-inf img{
+    rotate: 180deg;
+}
+
+.vineta-div img{
+    width: 470px;
+    height: 80px;
+}
+
+.info-familiares{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+}
+
+.info-header, .info-padres, .info-padrinos{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-header #info-header-1, .info-padres #info-padres-1, .info-padrinos #info-padrinos-1{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: #c0c0e2;
+    text-align: center;
+}
+
+.info-header #info-header-2, .info-familiares #info-familiares-1, .info-familiares #info-familiares-3, .info-familiares #info-familiares-4, .info-familiares #info-familiares-6{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: italic;
+    color: #b1b2e2;
+    text-align: center;
+}
+
+.info-familiares #info-familiares-2, .info-familiares #info-familiares-5{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #c0c0e2;
+}
+/* .info-header div{
+    height: 50%;
+} */
+
+
 @media screen and (max-width: 991px) {
     .carrusel {
         height: 100vh;
@@ -199,5 +282,31 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 
     .carrusel-title h1{
         font-size: 50px;
+    }
+
+    .vineta-sup img, .vineta-inf img{
+        width: 300px;
+        height: 50px;
+    }
+
+    .vineta-div img{
+        width: 235px;
+        height: 40px;
+    }
+
+    .info-header #info-header-1, .info-padres #info-padres-1, .info-padrinos #info-padrinos-1{
+        font-size: 10px;
+    }
+
+    .info-header #info-header-2, .info-familiares #info-familiares-1, .info-familiares #info-familiares-3, .info-familiares #info-familiares-4, .info-familiares #info-familiares-6{
+        font-size: 25px;
+    }
+
+    .info-familiares #info-familiares-2, .info-familiares #info-familiares-5{
+        font-size: 30px;
+    }
+
+    .info-familiares{
+        gap: 10%;
     }
 }
