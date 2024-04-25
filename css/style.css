@@ -92,7 +92,7 @@ section {
 }
 
 .carrusel {
-    background-image: url(../img/carrusel-1.jpg);
+    /* background-image: url(../img/carrusel-1.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,26 +102,23 @@ section {
 }
 
 @keyframes animate {
-
-    0%,
-    25% {
+    0%, 20%{
         background-image: url(../img/carrusel-1.jpg);
         background-size: cover;
     }
-
-    35%,
-    60% {
-        background-image: url(../img/carrusel-3.jpg);
+    25%, 45%{
+        background-image: url(../img/carrusel-1.jpg), url(../img/carrusel-3.jpg);
         background-size: cover;
     }
-
-    70%,
-    95% {
-        background-image: url(../img/carrusel-2.jpg);
+    50%, 70%{
+        background-image: url(../img/carrusel-3.jpg), url(../img/carrusel-2.jpg);
         background-size: cover;
     }
-
-    100% {
+    75%, 95%{
+        background-image: url(../img/carrusel-2.jpg), url(../img/carrusel-1.jpg);
+        background-size: cover;
+    }
+    100%{
         background-image: url(../img/carrusel-1.jpg);
         background-size: cover;
     }
