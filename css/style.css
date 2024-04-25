@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Esto asegura que el tamaño total de un elemento incluya el relleno y el borde */
+}
+
+/*SECTION GENERAL */
+section {
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+/* SECTION INDEPENDIENTES */
+#carrusel {
+    background-color: #684d91;
+}
+
+#info {
+    background-color: #c0c0e2;
+}
+
+#crono {
+    background-color: #dacae8;
+}
+
+#detalles {
+    background-color: #b1b2e2;
+}
+
+#itinerario {
+    background-color: #faff7f;
+}
+
+#regalos {
+    background-color: #684d91;
+}
+
+#hashtag {
+    background-color: #c0c0e2;
+}
+
+#galeria {
+    background-color: #dacae8;
+}
+
+#asistencia {
+    background-color: #b1b2e2;
+}
+
+#copyright {
+    background-color: #faff7f;
+}
+
+/* .carrusel{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content:
+    align-items:
+    position: relative;
+}
+
+.carrusel .imagen-carrusel{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(0.9);
+}
+
+.carrusel .imagen-carrusel.activa {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+} */
+
+.position {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carrusel {
+    background-image: url(../img/carrusel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    animation: animate 20s infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    25% {
+        background-image: url(../img/carrusel-1.jpg);
+        background-size: cover;
+    }
+
+    35%,
+    60% {
+        background-image: url(../img/carrusel-3.jpg);
+        background-size: cover;
+    }
+
+    70%,
+    95% {
+        background-image: url(../img/carrusel-2.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../img/carrusel-1.jpg);
+        background-size: cover;
+    }
+}
+
+/* PANEL DE AUDIO */
+.audio-container {
+    width: 100px;
+    height: 20%;
+    margin: 20px auto;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-rewind-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    display: none !important;
+}
+
+/* Orden en el carrusel (section 1) */
+.carrusel-header, .carrusel-title{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.carrusel-header h1, .carrusel-title h1{
+    color: white;
+}
+
+.carrusel-header h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.carrusel-title h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+}
+@media screen and (max-width: 991px) {
+    .carrusel {
+        height: 100vh;
+        /* La altura del carrusel será 100% del viewport en pantallas grandes */
+    }
+
+    .carrusel img {
+        height: 100%;
+        /* La imagen ocupa toda la altura del carrusel */
+        object-fit: cover;
+        /* La imagen se escala para cubrir completamente el carrusel, recortando el exceso */
+    }
+
+    .carrusel-title h1{
+        font-size: 50px;
+    }
+}
