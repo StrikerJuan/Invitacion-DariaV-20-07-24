@@ -217,8 +217,12 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     height: 100%;
 }
 
-.info-container div, .detalles-container div{
+.info-container div{
     max-width: 80%;
+}
+
+.detalles-container div{
+    max-width: 90%;
 }
 
 .vineta-sup, .vineta-inf, .vineta-div{
@@ -384,7 +388,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 430px;
+    width: 500px;
     height: 200px;
 }
 .detalles-icono-1 img, .detalles-icono-2 img, .detalles-icono-3 img{
@@ -404,6 +408,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 .detalles-body{
     font-family: "Lora", serif;
+    width: 100%;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -439,6 +444,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 .detalles-button a{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -468,10 +476,6 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
         height: 40px;
     }
 
-    .info-header #info-header-1, .info-padres #info-padres-1, .info-padrinos #info-padrinos-1{
-        font-size: 10px;
-    }
-
     .info-header #info-header-2, .info-familiares #info-familiares-1, .info-familiares #info-familiares-3, .info-familiares #info-familiares-4, .info-familiares #info-familiares-6{
         font-size: 25px;
     }
@@ -483,4 +487,43 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     .info-familiares{
         gap: 10%;
     }
+
+    .detalles-title{
+        font-size: 25px;
+    }
+
+    .detalles-body{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .detalles-header p{
+        font-size: 40px;
+    }
+
+    .detalles-iconos {
+        flex-direction: column;
+        height: 520px;
+        align-items: center;
+    }
+
+    /* .detalles-icono-1, .detalles-icono-2, .detalles-icono-3{
+        width: 215px;
+        height: 100px;
+    }*/
+
+    .detalles-icono-1 img, .detalles-icono-2 img, .detalles-icono-3 img{
+        width: 50px;
+    }
+
+    .detalles-title, .detalles-body {
+        padding-top: 10px;
+    }
+
+    .detalles-img img {
+        display: none;
+    }
+
+
+
 }
