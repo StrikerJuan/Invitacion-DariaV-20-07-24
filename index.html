@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitacion</title>
     <link rel="stylesheet" href="css/style.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="scripts/script.js"></script>
 </head>
 
@@ -21,7 +21,7 @@
                 <h1>Daria Valentina</h1>
             </div>
             <div class="audio-container">
-                <audio autoplay controls id="audio">
+                <audio  controls id="audio"> <!-- Agregar autoplay-->
                     <source src="resources/i-aint-worried.mp3" type="audio/mpeg" />
                     Your browser does not support the audio element.
                 </audio>
@@ -84,28 +84,83 @@
             </div>
         </section>
         <section id="crono">
-            <div>
-                <h1>Imagen</h1>
+            <div class="crono"></div>
+            <div class="crono-title">
+                <h1>Faltan:</h1>
             </div>
-            <div>
-                <h1>Temporizador</h1>
+            <div class="crono-countdown">
+                <div class="box" >
+                    <p class="box-num" id="dia"></p>
+                    <p class="box-let">Días</p>
+                </div>
+                <div class="box">
+                    <p class="box-num" id="hor"></p>
+                    <p class="box-let">Hrs.</p>
+                </div>
+                <div class="box">
+                    <p class="box-num" id="min"></p>
+                    <p class="box-let">Min.</p>
+                </div>
+                <div class="box">
+                    <p class="box-num" id="seg"></p>
+                    <p class="box-let">Seg.</p>
+                </div>
             </div>
         </section>
         <section id="detalles">
-            <div>
-                <h1>Lo que tienes que saber</h1>
-            </div>
-            <div>
-                <h1>Iconos</h1>
-            </div>
-            <div>
-                <h1>Lugares</h1>
-            </div>
-            <div>
-                <h1>Direcciones</h1>
-            </div>
-            <div>
-                <h1>Botones</h1>
+            <div class="detalles-container">
+                <div class="vineta-sup">
+                    <img src="img/vineta-1.svg" alt="">
+                </div>
+                <div class="detalles-header">
+                    <div>
+                        <p id="detalles-header-1">¡LO QUE TIENES QUE SABER!</p>
+                    </div>
+                </div>
+                <div class="vineta-inf">
+                    <img src="img/vineta-1.svg" alt="">
+                </div>
+                <div class="detalles-detalles">
+                    <div class="detalles-iconos">
+                        <div class="detalles-icono-1">
+                            <img src="img/ico-1.svg" alt="">
+                            <div class="detalles-title">
+                                <p>¿Cuándo?</p>
+                            </div>
+                            <div class="detalles-body">
+                                <p>Sábado 20 de Julio 2024, a las 17:30</p>
+                            </div>
+                        </div>
+                        <div class="detalles-icono-2">
+                            <img src="img/ico-2.svg" alt="">
+                            <div class="detalles-title">
+                                <p>Fiesta</p>
+                            </div>
+                            <div class="detalles-body">
+                                <p>Jardin de Eventos Terranova, Calle 4ta Cda. de Antígona s/n, Santa Rosa de Lima, 54740 Cuautitlán Izcalli, Méx.</p>
+                            </div>
+                        </div>
+                        <div class="detalles-icono-3">
+                            <img src="img/ico-3.svg" alt="">
+                            <div class="detalles-title">
+                                <p>Vestimenta</p>
+                            </div>
+                            <div class="detalles-body">
+                                <p>Formal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detalles-img">
+                        <img src="img/detalles-1.jpg" alt="">
+                    </div>
+                    <div class="detalles-button">
+                        <a href="https://maps.app.goo.gl/JMSMuzo8Wv8M2fudA">
+                            <div id="button-salon">
+                                <p>IR A MAPS</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="itinerario">
