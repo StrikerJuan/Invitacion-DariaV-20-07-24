@@ -28,5 +28,28 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(crearCountdown, 1000);
     crearCountdown();
 
-    
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function muestraLi(){
+        var items = document.querySelectorAll(".timeline li");
+        items.forEach(function (item) {
+            if(isElementInViewport(item)){
+                item.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', function(){
+        muestraLi();
+    });
+
+    muestraLi();
 });
