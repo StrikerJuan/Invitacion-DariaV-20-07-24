@@ -374,7 +374,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .detalles-detalles{
-    height: 65%;
+    height: 100%;
     flex-direction: column;
 }
 .detalles-iconos, .regalos-iconos{
@@ -586,7 +586,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -687,7 +687,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 
     .detalles-iconos, .regalos-iconos {
         flex-direction: column;
-        height: 520px;
+        height: 530px;
         align-items: center;
     }
 
@@ -734,15 +734,15 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     }
 
     .regalos-regalos{
-        height: 60%;
+        height: 50%;
     }
 
     .regalos-header{
-        height: 15%;
+        height: 20%;
     }
 
     .regalos-container > .vineta-sup, .regalos-container > .vineta-inf{
-        height: 10%;
+        height: 15%;
     }
     
     .regalos-icono img{
