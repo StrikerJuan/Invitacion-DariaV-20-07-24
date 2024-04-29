@@ -450,7 +450,12 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 /* Linea de tiempo */
-  
+.itinerario-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .timeline{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -459,6 +464,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     align-items: center;
     justify-content: center;
     height: 90%;
+    width: 90%;
 }
 .timeline:before{
     content: '';
