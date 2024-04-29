@@ -720,6 +720,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 
     .timeline{
         width: 85%;
+        /* comentatio de actualizacion */
     }
     /* .timeline:before{
         left: 0%;
