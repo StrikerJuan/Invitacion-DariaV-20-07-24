@@ -496,7 +496,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     content: '';
     position: absolute;
     top: 40px;
-    right: -14px;
+    right: -5%;
     width: 20px;
     height: 20px;
     background: white;
@@ -526,7 +526,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     content: '';
     position: absolute;
     top: 40px;
-    left: -10px;
+    left: -5%;
     width: 20px;
     height: 20px;
     background: white;
@@ -713,7 +713,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     }
 
     .timeline:before{
-        left: 50%;
+        left: 0%;
     }
     .timeline ul li{ 
         width: 50%;
