@@ -718,6 +718,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
         padding-top: 0;
     }
 
+    .timeline{
+        width: 50%;
+    }
     /* .timeline:before{
         left: 0%;
     } */
@@ -769,4 +772,6 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     .regalos-icono i{
         font-size: 40px;
     }
+
+
 }
