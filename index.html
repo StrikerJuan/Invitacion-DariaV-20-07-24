@@ -18,17 +18,20 @@
     <div class="sections-container">
         <section id="carrusel">
             <div class="carrusel position"></div>
-            <div class="carrusel-header">
-                <h1>¡Mis XV años!</h1>
-            </div>
-            <div class="carrusel-title">
-                <h1>Daria Valentina</h1>
-            </div>
             <div class="audio-container">
                 <audio controls id="audio"> <!-- Agregar autoplay-->
                     <source src="resources/i-aint-worried.mp3" type="audio/mpeg" />
                     Your browser does not support the audio element.
                 </audio>
+            </div>
+            <div class="carrusel-container">
+                <div class="carrusel-header">
+                    <h1>¡Mis XV años!</h1>
+                </div>
+                <div class="carrusel-title">
+                    <h1>Daria Valentina</h1>
+                </div>
+                
             </div>
         </section>
         <section id="info">
@@ -38,8 +41,8 @@
                 </div>
                 <div class="info-header">
                     <div>
-                        <p id="info-header-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, harum
-                            sequi. Beatae ut deleniti neque necessitatibus? Autem </p>
+                        <p id="info-header-1">Hay momentos inolvidables que se atesoran en el corazón para siempre. Por esta razón,
+                                                quiero que compartas conmigo éste día tan especial:</p>
                     </div>
                     <div>
                         <p id="info-header-2">Mis XV años</p>
@@ -54,13 +57,32 @@
                     </div>
                     <div class="info-familiares">
                         <div>
-                            <p id="info-familiares-1">Padre</p>
+                            <p id="info-familiares-1">Silvia Alvarado Vázquez</p>
                         </div>
                         <div>
                             <p id="info-familiares-2">&</p>
                         </div>
                         <div>
-                            <p id="info-familiares-3">Madre</p>
+                            <p id="info-familiares-3">Romeo Ramirez Betanzo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vineta-div">
+                    <img src="img/vineta-2.svg" alt="">
+                </div>
+                <div class="info-padrinos">
+                    <div>
+                        <p id="info-padrinos-1">Mis abuelos:</p>
+                    </div>
+                    <div class="info-familiares">
+                        <div>
+                            <p id="info-familiares-4">Laura Alvarado Vázquez</p>
+                        </div>
+                        <div>
+                            <p id="info-familiares-5">&</p>
+                        </div>
+                        <div>
+                            <p id="info-familiares-6">Manuel Sánchez Sánchez</p>
                         </div>
                     </div>
                 </div>
@@ -73,14 +95,23 @@
                     </div>
                     <div class="info-familiares">
                         <div>
-                            <p id="info-familiares-4">Padrino</p>
+                            <p id="info-familiares-4">Laura Alvarado Vázquez</p>
                         </div>
                         <div>
                             <p id="info-familiares-5">&</p>
                         </div>
                         <div>
-                            <p id="info-familiares-6">Madrina</p>
+                            <p id="info-familiares-6">Manuel Sánchez Sánchez</p>
                         </div>
+                    </div>
+                </div>
+                <div class="vineta-div">
+                    <img src="img/vineta-2.svg" alt="">
+                </div>
+                <div class="info-header">
+                    <div>
+                        <p id="info-header-1">Tu presencia ayudará a transformar uno de los días más importantes
+                                                de mi vida...</p>
                     </div>
                 </div>
                 <div class="vineta-inf">
@@ -394,6 +425,7 @@
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage8"><img src="img/galeria-8.jpg" alt=""></a>
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage9"><img src="img/galeria-9.jpg" alt=""></a>
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10"><img src="img/galeria-10.jpg" alt=""></a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage11"><img src="img/galeria-11.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="vineta-inf">
@@ -402,7 +434,54 @@
             </div>
         </section>
         <section id="asistencia">
-            <h1>Asistencia</h1>
+            <div class="asistencia-container">
+                <div class="asistencia-header">
+                    <p>Asistencia</p>
+                </div>
+                <div class="asistencia-body">
+                    <p>¡Queremos compartir este momento contigo!
+                        Por favor ayúdanos confirmando tu asistencia.</p>
+                </div>
+                <div class="asistencia-form">
+                    <!-- correo de test -->
+                    <!-- <form  action="https://formsubmit.co/e8598c09869284301c7bdf2b0ac5b80f" method="POST"> -->
+                    <!-- correo oficial -->
+                    <form  action="https://formsubmit.co/9b7614e2f237df680f8c699bc429d89f" method="POST">
+                        <div class="asistencia-nombre">
+                            <label for="">Nombre</label>
+                            <input type="text" id="nombre" name="Nombre" placeholder="Coloca tu nombre..." required>
+                        </div>
+                        <div class="asistencia-respuesta">
+                            <label for="">Respuesta</label>
+                            <div class="respuesta">
+                                <div class="respuesta-no">
+                                    <input type="radio" name="Respuesta" id="no" value="Lo siento, no podre asistir.">
+                                    <label for="no">Lo siento, no podre asistir.</label>
+                                </div>
+                                <div class="respuesta-si">
+                                    <input type="radio" name="Respuesta" id="si" value="¡Claro, ahí estaré!">
+                                    <label for="si">¡Claro, ahí estaré!</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asistencia-acompaniantes">
+                            <label for="">Acompañante(s)</label>
+                            <textarea name="Acompañantes" id="acompañante" cols="30" rows="10" placeholder="Nombres de tus acompañantes"></textarea>
+                        </div>
+                        <div class="asistencia-deseo">
+                            <label for="">Deseo</label>
+                            <textarea name="Deseo" id="deseo" cols="30" rows="10" placeholder="Deseale algo a la cumpleañera" required></textarea>
+                        </div>
+                        <div class="asistencia-email">
+                            <label for="">Correo eletrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Coloca tu correo..." required>
+                        </div>
+                        <div class="asistencia-boton">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
         <section id="copyright">
             <div class="copyright-container">
@@ -497,6 +576,13 @@
         <div class="modal-dialog modal-lg modal-dialog-center">
             <div class="modal-content">
                 <img src="img/galeria-10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div tabindex="-1" aria-labelledby="modalImage11" aria-hidden="true" class="modal fade" id="modalImage11">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            <div class="modal-content">
+                <img src="img/galeria-11.jpg" alt="">
             </div>
         </div>
     </div>

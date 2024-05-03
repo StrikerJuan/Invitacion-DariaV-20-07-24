@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     //  Creacion de cronometro
-    var targetDate = new Date("2024-07-20T17:30:00");
-    var currentDate = new Date();
     function crearCountdown(){
-        
+        var targetDate = new Date("2024-07-20T17:30:00");
+        var currentDate = new Date();
         var diferencia = targetDate - currentDate;
 
         var days = Math.floor(diferencia / (1000 * 60 * 60 * 24));
@@ -57,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     muestraLi();
 
-    var anio = currentDate.getFullYear();
+    var hoy = new Date();
+    var anio = hoy.getFullYear();
     document.getElementById("anio").innerText = anio;
 });
