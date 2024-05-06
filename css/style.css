@@ -765,7 +765,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .hashtag-ico{
-    height: 60%;
+    height: 35%;
     display: flex;
     align-items: center;
 }
